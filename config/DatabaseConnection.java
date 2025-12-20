@@ -10,12 +10,12 @@ public class DatabaseConnection {
     private static final String USER = "root";
     private static final String PASSWORD = "";
 
-    public static Connection getConnection(){
-        try{
-            return DriverManager.getConnection(URL,USER,PASSWORD);
-        }catch(SQLException e){
-            throw new RuntimeException("Erro na conexão com o banco ", e);
+    public static Connection getConnection() {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver"); // 👈 ESSENCIAL
+            return DriverManager.getConnection(URL, USER, PASSWORD);
+        } catch (ClassNotFoundException | SQLException e) {
+            throw new RuntimeException("Erro na conexão com o banco", e);
         }
     }
-
 }

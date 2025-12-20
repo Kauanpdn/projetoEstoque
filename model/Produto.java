@@ -9,6 +9,10 @@ public class Produto {
 
     // construtores, getters e setters
 
+    public Produto(){
+        
+    }
+
     public Produto(int id, String nome, int quantidade, double preco) {
         this.id = id;
         this.nome = nome;
