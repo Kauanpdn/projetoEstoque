@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | Controle de Estoque</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Estoque</h2>
+            <nav>
+                <a href="index.html" class="active">Dashboard</a>
+                <a href="pages/produtos.html">Produtos</a>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="main">
+
+            <!-- Header -->
+            <header class="header">
+                <h1>Dashboard</h1>
+                <button class="btn-logout">Sair</button>
+            </header>
+
+            <!-- Cards -->
+            <section class="cards">
+                <div class="card">
+                    <h3>Total de Produtos</h3>
+                    <p id="totalProdutos">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Valor Total do Estoque</h3>
+                    <p id="valorTotal">R$ 0,00</p>
+                </div>
+
+                <div class="card alert">
+                    <h3>Estoque Baixo</h3>
+                    <p id="estoqueBaixo">0</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

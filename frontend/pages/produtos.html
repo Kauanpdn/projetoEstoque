@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos | Controle de Estoque</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Estoque</h2>
+            <nav>
+                <a href="../index.html">Dashboard</a>
+                <a href="produtos.html" class="active">Produtos</a>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo -->
+        <main class="main">
+
+            <!-- Header -->
+            <header class="header">
+                <h1>Produtos</h1>
+                <button class="btn-logout">Sair</button>
+            </header>
+
+            <!-- Tabela -->
+            <section class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Qtd</th>
+                            <th>Preço</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaProdutos">
+                        <!-- Renderizado via JS -->
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
